@@ -4,7 +4,8 @@ Copyright (c) 2026 nymfie
 
 MODIFICATION NOTICE:
 SourceScribe is a partial Java port and derivative work of [annotate-snippets-rs](https://github.com/rust-lang/annotate-snippets-rs),
-the original license text of which is available below.
+and includes a Java port of [anstyle](https://github.com/rust-cli/anstyle/tree/main/crates/anstyle)
+the original MIT license texts of which are available below.
 
 Modifications are also licensed under the MIT License.
 
