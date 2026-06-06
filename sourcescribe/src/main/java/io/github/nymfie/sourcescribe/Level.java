@@ -4,6 +4,9 @@ import java.util.Objects;
 
 import org.jspecify.annotations.Nullable;
 
+import io.github.nymfie.sourcescribe.ansi.Style;
+import io.github.nymfie.sourcescribe.render.Stylesheet;
+
 public record Level(@Nullable String name, LevelInner level) {
 	public final static Level ERROR = new Level(LevelInner.ERROR);
 	public final static Level WARNING = new Level(LevelInner.WARNING);
@@ -84,7 +87,9 @@ public record Level(@Nullable String name, LevelInner level) {
 		return new Level(level);
 	}
 
-	// TODO: style() function
+	public Style style(Stylesheet stylesheet) {
+		return level.style(stylesheet);
+	}
 
 	@Override
 	public String toString() {
